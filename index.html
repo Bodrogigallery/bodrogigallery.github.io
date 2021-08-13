@@ -304,9 +304,16 @@
                 <input type="text" id="name" name="name" placeholder="Az ön neve">
                 <label for="subject">Üzenet tárgya</label>
                 <textarea id="subject" name="subject" placeholder="Írjon bátran! " style="height:170px"></textarea>
-                <input type="submit" value="Elküldés" id="submit">
+                <button 
+                    class="g-recaptcha" 
+                    data-sitekey="reCAPTCHA_site_key" 
+                    data-callback='onSubmit' 
+                    data-action='submit'
+                    type="submit" 
+                    id="submit"> Elküldés</button>
             </div>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

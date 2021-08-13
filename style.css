@@ -88,7 +88,7 @@ label {
     display: block;
 }
 
-input[type=submit] {
+.content button {
     display: block;
     margin: auto;
     cursor: pointer;

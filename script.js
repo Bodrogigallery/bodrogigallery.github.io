@@ -13,3 +13,7 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+function onSubmit(token) {
+  document.getElementById("submit").submit();
+}
