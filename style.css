@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: #121212;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav a {
+        float: none;
+        width: 70%;
+        margin: 0;
+        padding:0;
+      }
+  }
+
+nav {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: left;
+    background-image: url("picture_frame.png");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Goldman', cursive;
+}
+
+nav a {
+    display: block;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(148, 76, 42, 0.877);
+    box-shadow: 11px 1px 10px 1px rgba(0,0,0,0.74);
+    color: thistle;
+    text-decoration: none;
+}
+
+.part {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    margin: 15px auto;
+    width: 60%;
+    min-width: 320px;
+    min-height: 160px;
+}
+
+.pa-gallery-player-widget {
+    display: block;
+    min-height: 320px;
+    max-height: 320px;
+    min-width: 320px;
+    max-width: 640px;
+    flex-grow: 2;
+    margin-bottom: 15px;
+    border: 30px solid transparent;
+    border-image: url(picture_frame_dark2.png) 30 stretch;
+}
+
+.text {
+    text-align: center;
+    display: block;
+    flex-grow: 1;
+    min-width: 320px;
+    max-width: 320px;
+    margin: 15px 10px;
+}
+
+.text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 175px;
+    height: 250px;
+}
+
+label {
+    display: block;
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(148, 76, 42, 0.877);
+    box-shadow: 11px 1px 10px 1px rgba(0,0,0,0.74);
+  }
+
+  input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid rgb(109, 73, 73);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  .collapsible {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    background: rgba(148, 76, 42, 0.877);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 18px;
+    font-size: 15px;
+    position: relative;
+    font-size: 20px;
+  }
+  
+  .active, .collapsible:hover {
+    background: rgba(148, 76, 42, 0.877)
+  }
+  
+  .content {
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.0s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .content label {
+      text-align: start;
+      margin: auto;
+      width: 60%;
+  }
