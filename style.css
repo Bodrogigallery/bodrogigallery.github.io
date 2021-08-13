@@ -7,14 +7,44 @@ body {
     background: #121212;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     nav a {
         float: none;
         width: 70%;
         margin: 0;
         padding:0;
       }
-  }
+
+      div.first {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+  
+    div.second {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .part{
+        margin:0;
+    }
+
+    .text{
+        margin:0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    div.first {
+        margin-right: 20px;
+        margin-bottom: 150px;
+    }
+
+    div.second {
+        margin-left: 20px;
+        margin-top: 150px;
+    }
+}
 
 nav {
     overflow: hidden;
@@ -23,7 +53,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     background-image: url("picture_frame.png");
     background-position: center;
@@ -46,8 +76,8 @@ nav a {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
-    margin: 50px auto;
-    width: 60%;
+    margin: 20px auto;
+    width: 75%;
     min-width: 320px;
     min-height: 160px;
 }
@@ -137,7 +167,7 @@ label {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.0s ease-out;
-    background-color: #f1f1f1;
+    background-color: #2e2e2e;
   }
 
   .content label {
@@ -145,13 +175,3 @@ label {
       margin: auto;
       width: 60%;
   }
-
-  .first {
-      margin-right: 50px;
-      margin-bottom: 150px;
-  }
-
-  .second {
-    margin-left: 50px;
-    margin-top: 150px;
-}
