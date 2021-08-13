@@ -46,7 +46,7 @@ nav a {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
-    margin: 15px auto;
+    margin: 50px auto;
     width: 60%;
     min-width: 320px;
     min-height: 160px;
@@ -65,12 +65,14 @@ nav a {
 }
 
 .text {
+    color:#f1f1f1;
     text-align: center;
     display: block;
     flex-grow: 1;
     min-width: 320px;
     max-width: 320px;
     margin: 15px 10px;
+    border: 5px solid rgb(109, 73, 73);
 }
 
 .text img {
@@ -138,3 +140,13 @@ input[type=submit] {
       margin: auto;
       width: 60%;
   }
+
+  .first {
+      margin-right: 50px;
+      margin-bottom: 50px;
+  }
+
+  .second {
+    margin-left: 50px;
+    margin-top: 50px;
+}
