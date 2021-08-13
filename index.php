@@ -1,3 +1,8 @@
+<?php
+    define('SITE_KEY', '6Lfz-PkbAAAAABJV-27C88L5GqghIhXjsDysw9X9')
+    define('SECRET_KEY', '6Lfz-PkbAAAAAKUK4PEQa53OR5zGmc1iCyO-ChN9')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,7 @@
         "icon.png" 
             type = "image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY?>"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
